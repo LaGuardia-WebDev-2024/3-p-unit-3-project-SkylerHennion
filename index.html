@@ -14,47 +14,65 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Project: Produce</title>
+    <meta charset="utf-8" />
+    <style>
+      !!!!body {
+        background-image: conic-gradient(yellow, blue, white, orange, hotpink);
+      }
 
-<head>
-  <title>Project: Recipe book</title>
-  <meta charset="utf-8">
-  <style>
-  </style>
-</head>
+      ol {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+      }
 
-<body>
+      .img {
+        width: 80px;
+      }
+    </style>
+  </head>
 
-  <h1>____'s Recipe Book</h1>
+  <body>
+    <h1>Produce in Battle</h1>
 
-  <h2>Contents:</h2>
+    <h2>The Competitors</h2>
 
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  </ol>
+    <ol>
+      <li><a href="?">Banana</a></li>
+      <img
+        class="img"
+        src="https://images.everydayhealth.com/images/diet-nutrition/how-many-calories-are-in-a-banana-1440x810.jpg"> <br>
+      <li><a href="?">Lettuce</a></li>
+      <img
+        class="img"
+        src="https://cdn2.hubspot.net/hubfs/240798/p-main-Green%20Leaf%20Lettuce%20RGB.jpg"> <br>
 
-  <h2 id="?">Recipe #1</h2>
+    </ol>
 
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
+    <h2 id="?">Recipe #1</h2>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
+    <ul>
+      <li>Time: _</li>
+      <li>Serves: _</li>
+    </ul>
 
-  <p><strong>Step 1:</strong> Do something.
-  </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Ingredients</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
 
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+    <p><strong>Step 1:</strong> Do something.</p>
 
-</body>
-
+    <p>
+      <em>Source: <a href="?">Some recipes websites</a></em>
+    </p>
+  </body>
 </html>
