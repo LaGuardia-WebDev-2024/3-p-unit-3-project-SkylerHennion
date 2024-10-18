@@ -8,7 +8,7 @@ Requirements
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include a :hover feature
 [ no ] Feature 2 - Include at least two Internal links
-[ no ] Feature 3 - Include a list in a tabl
+[ no ] Feature 3 - Include a list in a table
 [ no ] Feature 4 - Include at least two background images in a table
 -->
 
@@ -19,19 +19,31 @@ Select ONE Additional Feature to Add
     <meta charset="utf-8" />
     <style>
       body {
-        background-image: radial-gradient(
-          red, black
-        );
-        
+        background-image: radial-gradient(red, black);
       }
 
-      
+      a:link {
+        color: red;
+      }
+
+      a:hover {
+        color: maroon;
+      }
+
+      a:visited {
+        color: red;
+      }
+
+      a:visited:hover {
+        color: maroon;
+      }
+
       ol {
         display: grid;
         align-items: center;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 5fr;
         column-gap: 5px;
-        font-size: 25px
+        font-size: 25px;
       }
 
       .img {
@@ -42,8 +54,12 @@ Select ONE Additional Feature to Add
         color: cornsilk;
         font-variant: small-caps;
         font-family: tahoma;
-        font-size: 80px;
+        font-size: 80px!!;
         text-align: center;
+      }
+
+      h1:hover {
+        color: black;
       }
 
       h2 {
@@ -59,11 +75,28 @@ Select ONE Additional Feature to Add
       }
 
       table,
-      tr,
-      td,
-      th {
-        border: solid white;
+      tr {
+        border: 3px solid black;
+        background-color: black;
       }
+      td {
+        background-color: firebrick;
+        font-family: tahoma;
+      }
+      th {
+        border: dotted darkorange;
+        background-color: darkred;
+        font-size: 20px;
+        font-family: courier;
+        color: indianred;
+      }
+      
+      .competitors {font-size: 17px;
+      font-family: courier;
+      font-weight: bolder;
+      background-color: crimson;
+      border: crimson;}
+      
     </style>
   </head>
 
@@ -74,7 +107,11 @@ Select ONE Additional Feature to Add
 
     <ol class="accent">
       <li><a href="https://tinyurl.com/3ctw8e72">Banana</a></li>
-      <img class = "img" src="https://tinyurl.com/bdd4s6pp" style="height: 74px" />
+      <img
+        class="img"
+        src="https://tinyurl.com/bdd4s6pp"
+        style="height: 74px"
+      />
       <br />
       <li><a href="https://tinyurl.com/3pmesxdp">Lettuce</a></li>
       <img class="img" src="https://tinyurl.com/8a9huz4n" />
@@ -90,31 +127,31 @@ Select ONE Additional Feature to Add
 
     <table>
       <tr>
-        <th></th>
+        <th class = "competitors"></th>
         <th>Strengths</th>
         <th>Weaknesses</th>
         <th>Curveball</th>
       </tr>
       <tr>
-        <td>Banana</td>
+        <td class = "competitors">Banana</td>
+        <td>Very nimble</td>
+        <td>Weakly armored</td>
+        <td>Can throw itself like a ninja star</td>
+      </tr>
+      <tr>
+        <td class = "competitors">Lettuce</td>
+        <td>Can hide easily</td>
+        <td>wordswordswords</td>
+        <td>wordswordswords</td>
+      </tr>
+      <tr>
+        <td class = "competitors">Lychee</td>
         <td>wordswordswords</td>
         <td>wordswordswords</td>
         <td>wordswordswords</td>
       </tr>
       <tr>
-        <td>Lettuce</td>
-        <td>wordswordswords</td>
-        <td>wordswordswords</td>
-        <td>wordswordswords</td>
-      </tr>
-      <tr>
-        <td>Lychee</td>
-        <td>wordswordswords</td>
-        <td>wordswordswords</td>
-        <td>wordswordswords</td>
-      </tr>
-      <tr>
-        <td>Asparagus</td>
+        <td class = "competitors">Asparagus</td>
         <td>wordswordswords</td>
         <td>wordswordswords</td>
         <td>wordswordswords</td>
