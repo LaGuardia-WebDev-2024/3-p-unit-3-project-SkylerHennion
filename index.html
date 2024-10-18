@@ -18,19 +18,51 @@ Select ONE Additional Feature to Add
     <title>Project: Produce</title>
     <meta charset="utf-8" />
     <style>
-      !!!!body {
-        background-image: conic-gradient(yellow, blue, white, orange, hotpink);
+      body {
+        background-image: radial-gradient(
+          red, black
+        );
+        
       }
 
+      
       ol {
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 5px;
+        font-size: 25px
       }
 
       .img {
         width: 80px;
+      }
+
+      h1 {
+        color: cornsilk;
+        font-variant: small-caps;
+        font-family: tahoma;
+        font-size: 80px;
+        text-align: center;
+      }
+
+      h2 {
+        font-family: didot;
+        color: blanchedalmond;
+        font-variant: small-caps;
+        font-size: 50px;
+      }
+
+      .accent {
+        color: white;
+        font-variant: small-caps;
+      }
+
+      table,
+      tr,
+      td,
+      th {
+        border: solid white;
       }
     </style>
   </head>
@@ -40,36 +72,57 @@ Select ONE Additional Feature to Add
 
     <h2>The Competitors</h2>
 
-    <ol>
-      <li><a href="?">Banana</a></li>
-      <img
-        class="img"
-        src="https://images.everydayhealth.com/images/diet-nutrition/how-many-calories-are-in-a-banana-1440x810.jpg"> <br>
-      <li><a href="?">Lettuce</a></li>
-      <img
-        class="img"
-        src="https://cdn2.hubspot.net/hubfs/240798/p-main-Green%20Leaf%20Lettuce%20RGB.jpg"> <br>
-
+    <ol class="accent">
+      <li><a href="https://tinyurl.com/3ctw8e72">Banana</a></li>
+      <img class = "img" src="https://tinyurl.com/bdd4s6pp" style="height: 74px" />
+      <br />
+      <li><a href="https://tinyurl.com/3pmesxdp">Lettuce</a></li>
+      <img class="img" src="https://tinyurl.com/8a9huz4n" />
+      <br />
+      <li><a href="https://tinyurl.com/yckest29">Lychee</a></li>
+      <img class="img" src="https://tinyurl.com/47ae6jyp" />
+      <br />
+      <li><a href="https://tinyurl.com/yckest29">Asparagus</a></li>
+      <img class="img" src="https://tinyurl.com/5n7zxtvy" />
     </ol>
 
-    <h2 id="?">Recipe #1</h2>
-
-    <ul>
-      <li>Time: _</li>
-      <li>Serves: _</li>
-    </ul>
+    <h2 id="?">Attributes</h2>
 
     <table>
-      <thead>
-        <tr>
-          <th>Ingredients</th>
-          <th>Quantity</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
+      <tr>
+        <th></th>
+        <th>Strengths</th>
+        <th>Weaknesses</th>
+        <th>Curveball</th>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td>wordswordswords</td>
+        <td>wordswordswords</td>
+        <td>wordswordswords</td>
+      </tr>
+      <tr>
+        <td>Lettuce</td>
+        <td>wordswordswords</td>
+        <td>wordswordswords</td>
+        <td>wordswordswords</td>
+      </tr>
+      <tr>
+        <td>Lychee</td>
+        <td>wordswordswords</td>
+        <td>wordswordswords</td>
+        <td>wordswordswords</td>
+      </tr>
+      <tr>
+        <td>Asparagus</td>
+        <td>wordswordswords</td>
+        <td>wordswordswords</td>
+        <td>wordswordswords</td>
+      </tr>
     </table>
+    <br />
 
-    <p><strong>Step 1:</strong> Do something.</p>
+    <p><strong class="accent">Step 1:</strong> Do something.</p>
 
     <p>
       <em>Source: <a href="?">Some recipes websites</a></em>
